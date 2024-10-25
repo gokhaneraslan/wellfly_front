@@ -60,7 +60,7 @@ export const UserForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6 px-10 lg:px-0 md:px-0 sm:px-10">
         <CustomFormField
           fieldType={FormFieldType.INPUT}
           control={form.control}

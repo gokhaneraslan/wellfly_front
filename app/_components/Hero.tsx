@@ -160,7 +160,7 @@ const Hero = () => {
               )}/>
             </div>
             <div className=" bg-blue-700 mb-3 mt-auto rounded-xl flex justify-center items-center">
-              <Button type="submit" className=" w-28 hover:bg-blue-800 text-white rounded-xl">
+              <Button type="submit" className=" md:w-28 hover:bg-blue-800 text-white rounded-xl">
                 Ara
               </Button>
             </div>

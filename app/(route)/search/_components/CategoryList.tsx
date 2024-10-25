@@ -48,7 +48,7 @@ const CategoryList = () => {
         </div>
         :
           [1,2,3].map((item,index) => (
-            <div key={index} className='h-[23rem] bg-slate-100
+            <div key={index} className='bg-slate-100
                 w-full rounded-lg animate-pulse '>
                       
             </div>

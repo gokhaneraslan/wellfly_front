@@ -14,8 +14,8 @@ const Footer = () => {
     </p>
 
     <div className="footer pt-16">
-      <div className="fLists">
-        <ul className="fList">
+      <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5">
+        <ul className="fList mb-20">
           <li className="fListItem">Countries</li>
           <li className="fListItem">Regions</li>
           <li className="fListItem">Cities</li>
@@ -44,8 +44,8 @@ const Footer = () => {
           <li className="fListItem">Restaurant reservations </li>
           <li className="fListItem">Travel Agents </li>
         </ul>
-        <ul className="fList">
-          <li className="fListItem">Curtomer Service</li>
+        <ul className="fList mt-20 xs:mt-20 sm:mt-0 md:mt-0 lg:mt-0">
+          <li className="fListItem">Customer Service</li>
           <li className="fListItem">Partner Help</li>
           <li className="fListItem">Careers</li>
           <li className="fListItem">Sustainability</li>
@@ -57,7 +57,7 @@ const Footer = () => {
       </div>
     </div>
 
-    <ul className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+    <ul className="flex flex-wrap justify-center pt-16 gap-6 md:gap-8 lg:gap-12">
       <li>
         <a className="text-dark-500 transition hover:text-gray-700/75" href="#"> About </a>
       </li>
@@ -83,7 +83,7 @@ const Footer = () => {
       </li>
     </ul>
 
-    <ul className="mt-8 flex justify-center gap-6 md:gap-8">
+    <ul className="mt-8 flex justify-center gap-1 md:gap-8">
       <li>
         <a
           href="#"
@@ -159,7 +159,7 @@ const Footer = () => {
           href="#"
           rel="noreferrer"
           target="_blank"
-          className="text-gray-200 transition hover:text-gray-700/75"
+          className="text-dark-500 transition hover:text-gray-700/75"
         >
           <span className="sr-only">Dribbble</span>
           <svg className="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

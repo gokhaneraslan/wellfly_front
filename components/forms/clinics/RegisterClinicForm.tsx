@@ -97,8 +97,8 @@ export const RegisterClinicForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-4">
-        <div className="flex gap-5">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-4 px-40 lg:px-0 md:px-0 sm:px-28">
+        <div className="lg:flex lg:gap-5 md:flex md:gap-5">
           <CustomFormField
           fieldType={FormFieldType.INPUT}
           control={form.control}
@@ -119,7 +119,7 @@ export const RegisterClinicForm = () => {
           iconAlt="email"
           />
         </div>
-        <div className="flex gap-5">
+        <div className=" lg:flex lg:gap-5 md:flex md:gap-5">
           <CustomFormField
             fieldType={FormFieldType.INPUT}
             control={form.control}
@@ -140,7 +140,7 @@ export const RegisterClinicForm = () => {
           />
 
         </div>
-        <div className="flex gap-5">
+        <div className="lg:flex lg:gap-5 md:flex md:gap-5">
           <CustomFormField
             fieldType={FormFieldType.INPUT}
             control={form.control}
@@ -151,7 +151,7 @@ export const RegisterClinicForm = () => {
             iconAlt="user"
           />
         </div>
-        <div className="flex gap-5 pb-5">
+        <div className="lg:flex lg:gap-5 md:flex md:gap-5 lg:pb-5 md:pb-5">
           <CustomFormField
             fieldType={FormFieldType.INPUT}
             control={form.control}
