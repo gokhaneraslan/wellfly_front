@@ -19,7 +19,7 @@ const Search = ({params}: any) => {
   },[])
 
   return (
-    <div className='pl-28'>
+    <div>
       <ClinicList heading={params.cname} clinicList={clinicList} />
     </div>
   )

@@ -91,10 +91,10 @@ export const UpdateClinicInfo = ({clinic} : any) => {
 
   return (
     <div className="sidebar-clinic">
-      <h1 className='flex justify-center items-center pb-8'>Clinic Information</h1>
+      <h1 className='flex justify-center text-black font-bold items-center pt-5 pb-8'>Clinic Information</h1>
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-4">
-                <div className="flex gap-5">
+                <div className="lg:flex lg:gap-5 md:flex md:gap-5">
                     <CustomFormField
                     fieldType={FormFieldType.INPUT}
                     control={form.control}
@@ -115,7 +115,7 @@ export const UpdateClinicInfo = ({clinic} : any) => {
                     iconAlt="email"
                     />
                 </div>
-                <div className="flex gap-5">
+                <div className="lg:flex lg:gap-5 md:flex md:gap-5">
                     <CustomFormField
                     fieldType={FormFieldType.INPUT}
                     control={form.control}
@@ -136,7 +136,7 @@ export const UpdateClinicInfo = ({clinic} : any) => {
                     />
 
                 </div>
-                <div className="flex gap-5">
+                <div className="lg:flex lg:gap-5 md:flex md:gap-5">
                     <CustomFormField
                     fieldType={FormFieldType.INPUT}
                     control={form.control}
@@ -149,7 +149,7 @@ export const UpdateClinicInfo = ({clinic} : any) => {
 
                 </div>
                 
-                <div className="flex gap-5">
+                <div className="lg:flex lg:gap-5 md:flex md:gap-5">
                   <CustomFormField
                     fieldType={FormFieldType.INPUT}
                     control={form.control}

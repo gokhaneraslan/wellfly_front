@@ -94,7 +94,7 @@ export const RegisterClinicForm = () => {
   useEffect(() => {
     getClinicalFeatures()
   },[])
-
+ 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-4 px-40 lg:px-0 md:px-0 sm:px-28">

@@ -8,14 +8,15 @@ function layout({children}: any) {
   return (
     <div>
       <Header />
-    <div className='grid grid-cols-3 bg-white'>
-      <div className=' md:block' >
-        {/*Category */}
-        <CategoryList/>
-      </div>
-      <div className='col-span-4 ml-[8.5rem] xs:col-span-3'>
-        {children}
-      </div>
+      <div className='flex flex-col bg-white xs:flex-col 
+          sm:flex-row md:flex-row lg:flex-row'>
+        <div className='md:block'>
+          {/*Category */}
+          <CategoryList/>
+        </div>
+        <div>
+          {children}
+        </div>
     </div>
     </div>
   )

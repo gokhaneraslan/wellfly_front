@@ -43,15 +43,15 @@ const Account = () => {
   return (
     <div>
       <Header />
-      <div className="bg-white px-10 pt-7"> 
+      <div className="bg-white px-3 md:px-10 lg:px-10 pt-7"> 
         {
           user ? 
-          <div className="flex pb-40 gap-10">
+          <div className="flex flex-col pb-40 md:flex-row lg:flex-row md:gap-10 lg:gap-10">
             <UpdateUserInfo user={user} />
             <Mybooking user={user} />
           </div> : 
           clinic && 
-          <div className="flex gap-10 mx-7">
+          <div className="flex flex-col gap-10 md:flex-col lg:flex-row md:mx-7 lg:mx-7">
             <UpdateClinicInfo clinic={clinic} />
             <div className="flex flex-col w-full">
               <DeleteServiceInfo clinic={clinic}/>

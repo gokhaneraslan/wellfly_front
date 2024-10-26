@@ -76,7 +76,7 @@ const AddFile = ({clinic}: any) => {
     }
 
   return (
-    <div className='flex-1 mr-[2rem] pb-10'>
+    <div className='flex-1 md:mr-[2rem] lg:mr-[2rem] sm:mr-[2rem] pb-10'>
         <h1 className='flex justify-center pb-2 mb-8 text-black font-bold items-center'>Add Photograph</h1>
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-4">

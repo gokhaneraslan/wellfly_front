@@ -54,7 +54,7 @@ const MyBooking = ({user}:any) => {
     },[user])
 
   return (
-    <div className='px-4 sm:px-10 mt-10 text-black'>
+    <div className='sm:px-10 mt-16 text-black md:px-4  lg:px-4'>
         <h2 className='font-bold text-2xl'>My Booking</h2>
         <Tabs defaultValue="upcoming" className="w-full mt-5">
         <TabsList className="w-full justify-start">

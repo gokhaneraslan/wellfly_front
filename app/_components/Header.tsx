@@ -59,7 +59,10 @@ const Header = () => {
   return (
     <div className='flex items-center justify-between p-4 bg-[#013B94] shadow-sm'>
       <div className='flex items-center gap-10 '>
-            <Image className='md:ml-[7rem]' src={'/assets/icons/logo.svg'} alt='logo' width={60} height={60} />
+            <Link href="/">
+              <Image className='md:ml-[7rem]' src={'/assets/icons/logo.svg'} alt='logo' width={60} height={60} />
+            </Link>
+            
             <ul className='ml-[3rem] md:flex gap-8 hidden'>
                 {Menu.map((item,index) => (
                     <Link href={item.path} key={index}>
@@ -74,7 +77,7 @@ const Header = () => {
         (user || clinic) ?
             <Popover>
             <PopoverTrigger>
-              <Image src={"/user.png"} alt='profile-image' width={50} height={50} className='rounded-full mr-[7rem]' />
+              <Image src={"/user.png"} alt='profile-image' width={50} height={50} className='rounded-full mr-10 md:mr-[7rem] lg:mr-[7rem]' />
             </PopoverTrigger>
             <PopoverContent className="w-44 bg-white mr-[4rem]">
                 <ul className='flex flex-col gap-2'>

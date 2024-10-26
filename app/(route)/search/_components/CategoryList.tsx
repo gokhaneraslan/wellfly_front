@@ -25,7 +25,7 @@ const CategoryList = () => {
 
   return (
     <div> { categoryList ?
-        <div className='h-96 w-80 fixed flex flex-col mt-10 px-8'>
+        <div className='h-96 w-80 flex flex-col mt-10 px-8'>
             <Command className='bg-white text-black'>
                 <CommandInput placeholder="Type a command or search..." />
                 <CommandList>

@@ -95,7 +95,8 @@ const BookAppointment = ({clinic}: any) => {
             {user ? <DialogTrigger><Button className="mt-3 rounded-full w-[15rem] bg-light-200 text-black hover:font-bold hover:bg-dark-500 "> Book Appointment </Button></DialogTrigger> 
              :  <Button className='mt-3 rounded-full w-[15rem] bg-light-200 text-black hover:font-bold hover:bg-dark-700' 
              onClick={BookLogOut}>Book Appointment</Button>}
-            <DialogContent className="bg-blue-600 text-white min-w-[43rem] h-[33rem]">
+            <DialogContent className="bg-blue-600 text-white overflow-scroll remove-scrollbar h-[38rem]
+            md:min-w-[43rem] lg:min-w-[43rem] sm:h-[33rem] md:h-[33rem] lg:h-[33rem]">
             <DialogHeader className="flex items-center">
                 <DialogTitle>Book Appointment</DialogTitle>
                 <DialogDescription>
@@ -114,7 +115,7 @@ const BookAppointment = ({clinic}: any) => {
                                     onSelect={setDate}
                                     classNames={{day_selected: "bg-white text-black font-[800]", 
                                         day_today:"bg-blue-100 text-black"}}
-                                    className="rounded-md border"
+                                    className="rounded-md border w-[20rem] pl-7 sm:w-full sm:pl-5 md:w-[18rem] md:pl-2 lg:w-[18rem] lg:pl-2"
                                     />
                             </div>
                             { /* Time */}
@@ -127,7 +128,7 @@ const BookAppointment = ({clinic}: any) => {
                                     {timeSlot?.map((item:any,index:any) => (
                                         <h2 key={index}
                                         onClick={() => setSelectedTimeSlot(item.time)}
-                                        className={`p-2 border text-center hover:bg-white hover:text-black w-[6rem] hover:font-bold cursor-pointer
+                                        className={`p-2 border text-center hover:bg-white hover:text-black text-[12px] w-[5rem] hover:font-bold cursor-pointer
                                          rounded-full ${item.time === selectedTimeSlot&& 'bg-white font-bold text-black '} `}> {item.time} </h2>
                                     ))}
                                 </div>
@@ -139,11 +140,11 @@ const BookAppointment = ({clinic}: any) => {
                 </DialogDescription>
                 
             </DialogHeader>
-            <DialogFooter className="sm:justify-end px-10">
+            <DialogFooter className="flex flex-col md:flex-row lg:flex-row justify-center items-end md:px-5 lg:px-5 sm:pr-[50px]">
                 <DialogClose asChild>
                     <>
-                        <Textarea className='bg-dark-300 w-[27rem] text-white min-h-[2rem]' value={note} onChange={e => setNote(e.target.value)}/>
-                        <Button className='w-[8rem] mt-4 shad-danger-btn' type="submit" disabled={!(date && selectedTimeSlot)}
+                        <Textarea className='bg-dark-300 w-[20rem] sm:mr-5 lg:w-[27rem] md:w-[27rem] text-white min-h-[2rem]' value={note} onChange={e => setNote(e.target.value)}/>
+                        <Button className='w-[8rem] mt-4 sm:mr-8 shad-danger-btn' type="submit" disabled={!(date && selectedTimeSlot)}
                         onClick={() => saveBooking()} >
                             Submit
                         </Button>

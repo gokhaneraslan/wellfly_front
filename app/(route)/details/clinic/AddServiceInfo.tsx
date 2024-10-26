@@ -121,7 +121,7 @@ const AddServiceInfo = ({clinic}:any) => {
 
 
   return (
-    <div className='flex-1 mr-[2rem] pb-[4rem]'>
+    <div className='flex-1 md:mr-[2rem] lg:mr-[2rem] sm:mr-[2rem] pb-[4rem]'>
       <h1 className='flex justify-center pb-8 text-black font-bold items-center'>Add & Update Services</h1>
      <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-4">
@@ -135,7 +135,7 @@ const AddServiceInfo = ({clinic}:any) => {
           >{clinicCategories && clinicCategories.map((category:any, i:any) => (
               <SelectItem key={category.documentId}  value={`${category.documentId}-${category.Name}`}>
                 <div key={i} className="flex cursor-pointer items-center gap-5 
-                   w-[35rem] h-[2.7rem] border-y-2 bg-dark-500 pl-5 border-dark-400">
+                   sm:w-[35rem] md:w-[35rem] lg:w-[35rem] w-[18rem] h-[2.7rem] border-y-2 bg-dark-500 pl-5 border-dark-400">
                   <Image
                     src={category?.Icon[0]?.url}
                     width={32}
@@ -159,7 +159,7 @@ const AddServiceInfo = ({clinic}:any) => {
             {services && services.map((service:any, i:any) => (
                 <SelectItem key={service.documentId} value={`${service.documentId}-${service.Name}`}>
                   <div key={i} className="flex cursor-pointer items-center gap-5 
-                   w-[35rem] h-[2.7rem] border-y-2 bg-dark-500 pl-5 border-dark-400">
+                   sm:w-[35rem] md:w-[35rem] lg:w-[35rem] w-[18rem] h-[2.7rem] border-y-2 bg-dark-500 pl-5 border-dark-400">
                     <Image
                       src={service.Icon[0]?.url}
                       width={32}

@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 import "./footer.css"
+import Link from 'next/link'
 
 const Footer = () => {
   return (
     <footer className="bg-light-200">
   <div className="mx-auto max-w-5xl px-4 justify-center text-center flex flex-col items-center py-16 sm:px-6 lg:px-8">
-    <Image src={"/assets/icons/logo.svg"} alt='logo' width={40} height={40} />
-
+    <Link href="/">
+      <Image src={"/assets/icons/logo.svg"} alt='logo' width={40} height={40} />
+    </Link>
     <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-dark-500">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
       itaque neque.

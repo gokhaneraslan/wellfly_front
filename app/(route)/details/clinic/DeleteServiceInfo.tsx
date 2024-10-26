@@ -104,15 +104,15 @@ const DeleteServiceInfo = ({clinic}:any) => {
 
   return (
     <div className='flex-1 mr-[2rem] pb-10'>
-      <h1 className='flex justify-center pb-8 mb-8 items-center'>Added Services</h1>
+      <h1 className='flex justify-center pb-8 mb-8 text-black font-bold pt-5 items-center'>Added Services</h1>
       <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-4">
-        <div className='flex gap-5 ml-1'>
+        <div className='lg:flex-row lg:gap-5 flex flex-col ml-1'>
       <FormField control={form.control} name="services"
         render={({ field }) => (
         <FormItem>
         <Select onValueChange={field.onChange} defaultValue={field.value}>
-        <FormControl className="w-[31rem]">
+        <FormControl className="w-[21.5rem] sm:w-[30rem] md:w-[31rem] lg:w-[31rem]">
           
           <SelectTrigger className="shad-select-trigger ">
             <SelectValue placeholder={field.value ? field.value : (services ? services.length > 0 && services[0].Name : " ")} />
@@ -122,7 +122,7 @@ const DeleteServiceInfo = ({clinic}:any) => {
               {services && services.map((service:any, i:any) => (
                 <SelectItem key={service.documentId}  value={`${service.documentId}-${service.Name}`}>
                   <div key={i} className="flex cursor-pointer items-center gap-5 
-                    w-[25rem] h-[2.7rem] border-y-2 bg-dark-500 pl-5 border-dark-400">
+                    md:w-[25rem] lg:w-[25rem]  w-[17rem] h-[2.7rem] border-y-2 bg-dark-500 pl-1 md:pl-5 lg:pl-5 border-dark-400">
                     <p key={i}>{service.Name}</p>
                   </div>
                 </SelectItem>
@@ -130,7 +130,7 @@ const DeleteServiceInfo = ({clinic}:any) => {
           </SelectContent>
         </Select>
         </FormItem>)} />
-        <Button className='flex justify-center items-center w-[8rem] shad-danger-btn' type="submit">Delete Service</Button>
+        <Button className='flex justify-center items-center mt-5 ml-52 sm:ml-80 md:ml-80 lg:m-0 w-[8rem] shad-danger-btn' type="submit">Delete Service</Button>
         </div>
       </form>
     </Form>

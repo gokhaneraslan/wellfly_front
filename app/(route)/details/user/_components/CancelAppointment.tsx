@@ -10,7 +10,7 @@ const CancelAppointment = ({onContinueClick}:any) => {
     <div>
         <AlertDialog>
         <AlertDialogTrigger>
-            <Button className="text-primary hover:bg-light-200 border-primary ml-10" variant='outline'>Cancel Appointment</Button>
+            <Button className="text-primary hover:bg-light-200 border-primary ml-0 sm:ml-0 md:ml-0 lg:ml-24 md:mt-4 lg:mt-4" variant='outline'>Cancel Appointment</Button>
         </AlertDialogTrigger>
         <AlertDialogContent className='bg-dark-300 text-white'>
             <AlertDialogHeader>
